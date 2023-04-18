@@ -17,5 +17,5 @@ ddmimp -t dynamodb-table-name path/to/the/json/line/data.jsonl
 To make `ddbimp` available in your system, you can run the following command.
 
 ```sh
-go install <THIS_REPO_URL_WITHOUT_PROTOCAL_PREFIX>@latest
+go install github.com/festum/ddbimp@latest
 ```

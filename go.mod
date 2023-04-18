@@ -1,4 +1,4 @@
-module dynamodb-data-importer
+module github.com/festum/ddbimp
 
 go 1.20
 
