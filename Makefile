@@ -53,6 +53,7 @@ build:
 	GOOS=freebsd GOARCH=arm go build -o bin/$(APP_NAME)-freebsd-arm .
 	GOOS=freebsd GOARCH=arm64 go build -o bin/$(APP_NAME)-freebsd-arm64 .
 	CGO_ENABLED=0 GOOS=darwin GOARCH=amd64 go build -o bin/$(APP_NAME)-darwin-amd64 .
+	CGO_ENABLED=0 GOOS=darwin GOARCH=arm64 go build -o bin/$(APP_NAME)-darwin-arm64 .
 	GOOS=windows GOARCH=amd64 go build -o bin/$(APP_NAME)-windos-amd64.exe .
 	GOOS=windows GOARCH=386 go build -o bin/$(APP_NAME)-windos-i386.exe .
 	GOOS=solaris GOARCH=amd64 go build -o bin/$(APP_NAME)-solaris-amd64 .
