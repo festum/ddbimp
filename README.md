@@ -19,3 +19,10 @@ To make `ddbimp` available in your system, you can run the following command.
 ```sh
 go install github.com/festum/ddbimp@latest
 ```
+
+## Run in Docker
+
+```sh
+docker-buildx build -t dynamodb-importer:latest .
+docker run -it --rm -v $HOME/.aws/credentials:/root/.aws/credentials:ro -v /tmp/ddbimp:/var/ddbimp/input --entrypoint bash dynamodb-importer
+```
